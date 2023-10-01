@@ -1,20 +1,14 @@
-# Automate Build, Test and Deploy URL Shortener Application in Stages
+# Monitor Applications and Server Resources
 
-September 15, 2023
+October 1, 2023
 
 By:  Annie V Lam - Kura Labs
 
 # Purpose
 
-Automate Build, Test, and Deploy URL Shortener Application in Stages
+Monitor application and server resources using AWS Cloudwatch.
 
-Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  In this deployment, AWS Beanstalk CLI is used to automate the Deploy Stage, and GitHub Webhook is used to fully automate Jenkins "Run Build".  For every major install, it is best practice to test it in order to isolate issues if an issue arises.  
-
-For this deployment:  
-- After Jenkins is installed, run a build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
-- After AWS EB CLI is installed, run the build to include the Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file, or the html files.
-- After the GitHub Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
-- *Please note that all the installs and configurations can be done before running the first build.  However, if there is an issue, it makes it more difficult to troubleshoot.
+Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, Cloudwatch was integrated with the EC2 where it can monitor the EC2 resources via Cloudwatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn used and deployed to the Nginx web server
 
 ## Step #1 Map Out the Deployment
 
