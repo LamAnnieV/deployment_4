@@ -10,7 +10,7 @@ Monitor application and server resources using AWS CloudWatch.
 
 Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, the Virtual Private Cloud, availability zone, and subnets were configured. CloudWatch was integrated with the EC2 where it can monitor the EC2 resources via CloudWatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn was used and deployed to the Nginx web server
 
-## Step #1 Diagram the VPC infrastructure and the CI/CD Pipeline
+## Step #1 Diagram the VPC Infrastructure and the CI/CD Pipeline
 
 [Deployment Diagram](Images/Deployment_Pipeline.png)
 
@@ -18,7 +18,7 @@ Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  
 
 GitHub is the repository where Jenkins retrieves the files to build, test, and deploy the URL Shortener application.  For this deployment, after the initial commit, the GitHub was cloned into the local report, where it was branched and the Jenkinsfile was edited and the changes were commited.  The second branch was then merged to the main branched, then pushed to the GitHub repository.
 
-## Step #3 Setup EC2 Instance, CloudWatch, and Install Jenkins and Others
+## Step #3 Setup Infrastructure and Installs
 
 **Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Keep Running Step".
@@ -49,7 +49,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-## Step #4 Install AWS ELastic Beanstalk CLI
+## Step #4 Run Jenkins Build
 
 In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI were installed to automate the deployment of the URL Shortener.
 
