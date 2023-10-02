@@ -8,7 +8,7 @@ By:  Annie V Lam - Kura Labs
 
 Monitor application and server resources using AWS CloudWatch.
 
-Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, the Virtual Private Cloud, availability zone, and subnets were configured. CloudWatch was integrated with the EC2 where it can monitor the EC2 resources via CloudWatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn was used and deployed to the Nginx web server
+Previously, our CI/CD pipeline was automated using Jenkins and leverages GitHub webhooks for seamless integration. In this deployment, a Virtual Private Cloud (VPC), availability zones, and subnets are configured to create a secure and scalable network architecture.  We also integrated CloudWatch agents with our EC2 instances to allow us to collect valuable performance metrics and logs.  Also, instead of using the Elastic Beanstalk CLI for web application deployment, we've opted for GUnicorn, which provides a robust HTTP server and deployed to Nginx, which serves efficient and reliable web content.
 
 ## Step #1 Diagram the VPC Infrastructure and the CI/CD Pipeline
 
@@ -16,7 +16,7 @@ Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  
 
 ## Step #2 GitHub/Git
 
-GitHub is the repository where Jenkins retrieves the files to build, test, and deploy the URL Shortener application.  For this deployment, after the initial commit, the GitHub was cloned into the local report, where it was branched and the Jenkinsfile was edited and the changes were commited.  The second branch was then merged to the main branched, then pushed to the GitHub repository.
+GitHub serves as the repository from which Jenkins retrieves files to build, test, and deploy the URL Shortener application.  For this deployment, after the initial commit, the GitHub repository was cloned locally. Then a new branch was created, and the Jenkinsfile was edited with the necessary changes. The changes were committed and the second branch was subsequently merged into the main branch. Finally, the updated main branch was pushed to the GitHub repository.
 
 ## Step #3 Setup VPC and EC2 Infrastructure 
 
@@ -38,13 +38,13 @@ GitHub is the repository where Jenkins retrieves the files to build, test, and d
 
 **Shell Scripts for Python and other installs**
 
-The Web application is written in Python
+Python is used in the application and the test stage
 
 [Install "python3.10-venv", "python3-pip" and "zip"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
 
 **Shell Scripts to Install Nginx**
 
-Nginx is for ???
+Nginx is used as a web server for hosting the URL Shortener application
 
 [Install Nginx](https://github.com/LamAnnieV/Instance_Installs/blob/main/Install_Ngnix.sh)
 
@@ -68,7 +68,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stages.
+### Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository https://github.com/LamAnnieV/deployment_4.git and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stages.
 
 **Jenkins Result:  The build was successful, see run #1 - 3**
 
@@ -92,9 +92,7 @@ Build #3 Resource Usage towards the end of the build
 
 ![CloudWatch Monitoring #3 End](Images/CloudWatch_3_End.png)
 
-CloudWatch Notification that Resource Usage is over 15%
 
-![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
 
 **Launch URL Shortener Website**
 
@@ -102,13 +100,24 @@ CloudWatch Notification that Resource Usage is over 15%
 
 **Conclusion**
 
-We used T.2 medium for this EC2 instance and this build uses a log
+AWS offers various instance types with different resource capacities. If we base our instance type selection solely on running one build at a time, our current choice, the T2 Medium, seems a bit excessive, as we utilize only about 21% of the CPU capacity.
+
+However, when we consider running builds consecutively, the CPU usage increases to 40%. If we were to use the T2 Micro instance type, which has one CPU, instead of the T2 Medium with two CPUs, our usage percentage would double to 80%. Operating at 80% capacity could potentially hinder performance or even lead to system crashes.
+
+AWS Instance Type Capacity
+
+![Instance Type](Images/instance_type.png)
+
+CloudWatch Notification that Resource Usage is over 15%
+
+![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
+
 
 ## Issue(s): 
 
-- This deployment went pretty smoothly, but there might be issues if we run too many builds at once or if there are too much traffic in the URL Shortener.
+- Our intial build did not trigger an email notification even thought the CPU usage was above the set threshold.  
   
 ## Area(s) for Optimization:
 
-- 1.  
+-  Automate the AWS Cloud Infrastructure using Terraform
   
