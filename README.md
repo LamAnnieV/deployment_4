@@ -34,18 +34,16 @@ GitHub is the repository where Jenkins retrieves the files to build, test, and d
 
 [Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
 
+## Step #4 Installs for EC2 
+
+**Shell Scripts for Python, the programming language that the application is in**
+
+[Install "python3.10-venv", "python3-pip" and "zip"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
+
+
+
 **Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Keep Running Step".
-
-
-
-**Instructions to Setup a New EC2 Instance**
-
-[Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
-
-**Shell Scripts for Install(s) in the Instance**
-
-[Install "python3.10-venv", "python3-pip" and "nginx"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
 
 **Instructions for Jenkins Install, Install Plugin(s), and Create Build**
 
