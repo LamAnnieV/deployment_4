@@ -89,7 +89,8 @@ When a commit is made in GitHub, the 'Run Build' process still needs to be manua
 
 Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository https://github.com/LamAnnieV/deployment_4.git and run the build.  This build consists of four stages:  The Build, the Test, the Clean, and the Deploy stages.
 
-**Jenkins Result:  The build was successful, see run #1 - 3**
+### Results
+**The build was successful, see build run #1 - 3**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
