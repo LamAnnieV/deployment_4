@@ -6,9 +6,9 @@ By:  Annie V Lam - Kura Labs
 
 # Purpose
 
-Monitor application and server resources using AWS Cloudwatch.
+Monitor application and server resources using AWS CloudWatch.
 
-Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, the Virtual Private Cloud, availability zone, and subnets were configured. Cloudwatch was integrated with the EC2 where it can monitor the EC2 resources via Cloudwatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn was used and deployed to the Nginx web server
+Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, the Virtual Private Cloud, availability zone, and subnets were configured. CloudWatch was integrated with the EC2 where it can monitor the EC2 resources via CloudWatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn was used and deployed to the Nginx web server
 
 ## Step #1 Map Out the Deployment
 
@@ -18,7 +18,7 @@ Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  
 
 GitHub is the repository where Jenkins retrieves the files to build, test, and deploy the URL Shortener application.  For this deployment, after the initial commit, the GitHub was cloned into the local report, where it was branched and the Jenkinsfile was edited and the changes were commited.  The second branch was then merged to the main branched, then pushed to the GitHub repository.
 
-## Step #3 Setup EC2 Instance and Install Jenkins
+## Step #3 Setup EC2 Instance, CloudWatch, and Install Jenkins and Others
 
 **Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Keep Running Step".
@@ -43,7 +43,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [How to create a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html)
 
-### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortener application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consists of two stages:  The build Stage and the Test Stage
+### Jenkins Build #1:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stage.
 
 **Result:  Build and Test was successful, see run #1**
 
