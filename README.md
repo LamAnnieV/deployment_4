@@ -128,5 +128,5 @@ CloudWatch Notification that Resource Usage is over 15%
 
 -  Automate the AWS Cloud Infrastructure using Terraform
 
-Note:  ChatGPT was used to enhance the quality and clarity of the documentation
+Note:  ChatGPT was used to enhance the quality and clarity of this documentation
   
