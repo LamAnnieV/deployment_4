@@ -43,29 +43,17 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [How to create a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html)
 
+## Step #4 Run Jenkins Build
+
+
 ### Jenkins Build #1:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stage.
 
 **Result:  Build and Test was successful, see run #1**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-## Step #4 Run Jenkins Build
-
 In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI were installed to automate the deployment of the URL Shortener.
 
-**AWS EB CLI Install**
-
-[Generate AWS CLI Credentials](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
-
-[Script to Install CLI](https://github.com/LamAnnieV/Instance_Installs/blob/ec378d89c22c95a909cb1283516e633ab6c9b153/03_CLI_installs.sh)
-
-[Script to Install AWS EB CLI Part I](https://github.com/LamAnnieV/Instance_Installs/blob/main/04A_AWS_EB_CLI_install.sh)
-
-[Script to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04B_AWS_EB_CLI_install.sh)
-
-[Script to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04C_AWS_EB_CLI_install.sh)
-
-**After installing the AWS EB CLI the application URL was displayed:**
 
 ![Application URL](Images/URL_Website.png)
 
