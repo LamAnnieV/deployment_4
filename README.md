@@ -27,21 +27,21 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
 
-??????????????????????????????????????????????
-
-[Create IAM Role Cloudwatch]()
-
 **Shell Scripts for Install(s) in the Instance**
 
 [Install "python3.10-venv", "python3-pip" and "nginx"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
 
 **Instructions for Jenkins Install, Install Plugin(s), and Create Build**
 
-[Jenkins Install](https://github.com/LamAnnieV/Instance_Installs/blob/main/01_jenkins_installs.sh)
+[Install Jenkins](https://github.com/LamAnnieV/Instance_Installs/blob/main/01_jenkins_installs.sh)
 
-[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Jenkins/blob/main/Install_Pipeline_Keep_Running_Step.md)
+[Install "Pipeline Keep Running Step" Plugin](https://github.com/LamAnnieV/Jenkins/blob/main/Install_Pipeline_Keep_Running_Step.md)
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
+
+[Install/Configure CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html)
+
+[How to create a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html)
 
 ### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortener application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consists of two stages:  The build Stage and the Test Stage
 
