@@ -12,7 +12,7 @@ Previously, our CI/CD pipeline was automated using Jenkins and leverages GitHub 
 
 ## Step #1 Diagram the VPC Infrastructure and the CI/CD Pipeline
 
-[Deployment Diagram](Images/Deployment_Pipeline.png)
+![Deployment Diagram](Images/Deployment_Pipeline.png)
 
 ## Step #2 GitHub/Git
 
