@@ -64,7 +64,11 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 ## Step #5 Configure CloudWatch and Create Alarms to Monitor Resources
 
+CloudWatch is used to monitor our resource usage in our instance.
+
 [Install/Configure CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance-fleet.html)
+
+Alarms allow you to set thresholds in CloudWatch, which will notify you when those thresholds are breached.
 
 [How to create a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html)
 
