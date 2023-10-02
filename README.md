@@ -10,6 +10,10 @@ Monitor application and server resources using AWS CloudWatch.
 
 Previously, our CI/CD pipeline was automated using Jenkins and leverages GitHub webhooks for seamless integration. In this deployment, a Virtual Private Cloud (VPC), availability zones, and subnets are configured to create a secure and scalable network architecture.  We also integrated CloudWatch agents with our EC2 instances to allow us to collect valuable performance metrics and logs.  Also, instead of using the Elastic Beanstalk CLI for web application deployment, we've opted for GUnicorn, which provides a robust HTTP server and deployed to Nginx, which serves efficient and reliable web content.
 
+In order for the EC2 instance, where Jenkins is installed, to access the repository, you need to generate a token from GitHub and then provide it to the EC2 instance.
+
+[Generate GitHub Token](https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)
+
 ## Step #1 Diagram the VPC Infrastructure and the CI/CD Pipeline
 
 ![Deployment Diagram](Images/Deployment_Pipeline.png)
