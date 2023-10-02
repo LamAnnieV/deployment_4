@@ -70,14 +70,29 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 ### Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stages.
 
-**Result:  The build was successful, see run #1 - 3**
+**Jenkins Result:  The build was successful, see run #1 - 3**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
+**CloudWatch Monitoring for Build #1**
+
+![CloudWatch Monitoring #1](Images/CloudWatch_1.png)
+
+**CloudWatch Monitoring for Build #2 and 3 that was run back to back**
+
+![CloudWatch Monitoring #2](Images/CloudWatch_2.png)
+
+![CloudWatch Monitoring #3 Start](Images/CloudWatch_3_Start.png)
+
+![CloudWatch Monitoring #3 End](Images/CloudWatch_3_End.png)
+
+![CloudWatch Notification](CloudWatch_Notification_Build2and3.png)
 
 **Launch URL Shortener Website**
 
 ![URL Shortener](Images/URL_Shortener.png)
+
+**Conclusion**
 
 ## Issue(s): 
 
