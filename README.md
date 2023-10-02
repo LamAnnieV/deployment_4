@@ -98,37 +98,36 @@ Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener a
 
 ![CloudWatch Monitoring #1](Images/CloudWatch_1.png)
 
-**CloudWatch Monitoring for Build #2 and 3 that was run back to back**
+#### CloudWatch Monitoring for Build #2 and 3 that was run back to back
 
-Build #2 Resource Usage
+**Build #2 Resource Usage**
 
 ![CloudWatch Monitoring #2](Images/CloudWatch_2.png)
 
-Build #3 Resource Usage at the beginning of the build
+**Build #3 Resource Usage at the beginning of the build**
 
 ![CloudWatch Monitoring #3 Start](Images/CloudWatch_3_Start.png)
 
-Build #3 Resource Usage towards the end of the build
+**Build #3 Resource Usage towards the end of the build**
 
 ![CloudWatch Monitoring #3 End](Images/CloudWatch_3_End.png)
-
 
 
 **Launch URL Shortener Website**
 
 ![URL Shortener](Images/URL_Shortener.png)
 
-**Conclusion**
+### Conclusion
 
 AWS offers various instance types with different resource capacities. If we base our instance type selection solely on running one build at a time, our current choice, the T2 Medium, seems a bit excessive, as we utilize only about 21% of the CPU capacity.
 
 However, when we consider running builds consecutively, the CPU usage increases to 40%. If we were to use the T2 Micro instance type, which has one CPU, instead of the T2 Medium with two CPUs, our usage percentage would double to 80%. Operating at 80% capacity could potentially hinder performance or even lead to system crashes.
 
-AWS Instance Type Capacity
+**AWS Instance Type Capacity**
 
 ![Instance Type](Images/instance_type.png)
 
-CloudWatch Notification that Resource Usage is over 15%
+**CloudWatch Notification that Resource Usage is over 15%**
 
 ![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
 
