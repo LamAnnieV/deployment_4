@@ -64,7 +64,16 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [How to create a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ConsoleAlarms.html)
 
-## Step #6 Configure Jenkins Build and Run Build
+## Step #6 Configure GitHub Webhook
+
+When a commit is made in GitHub, the 'Run Build' process still needs to be manually initiated. To automate this workflow, we configured a GitHub Webhook. Now, whenever there is a commit in the GitHub Repository, the webhook automatically triggers Jenkins to push the files and initiate the Build process.
+
+**To configure GitHub Webhook**
+
+[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+
+
+## Step #7 Configure Jenkins Build and Run Build
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
@@ -120,4 +129,6 @@ CloudWatch Notification that Resource Usage is over 15%
 ## Area(s) for Optimization:
 
 -  Automate the AWS Cloud Infrastructure using Terraform
+
+Note:  ChatGPT was used to enhance the quality and clarity of the documentation
   
