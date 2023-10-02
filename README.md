@@ -115,7 +115,7 @@ CloudWatch Notification that Resource Usage is over 15%
 
 ## Issue(s): 
 
-- Our intial build did not trigger an email notification even thought the CPU usage was above the set threshold.  
+- Our initial build did not trigger an email notification, despite the CPU usage exceeding the set threshold of 15%. This issue may be related to the CloudWatch configuration, which typically takes a couple of minutes to become active after setup completion. In the future, we will conduct notification tests before relying on them in production.  
   
 ## Area(s) for Optimization:
 
