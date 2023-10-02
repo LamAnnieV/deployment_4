@@ -68,8 +68,6 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 When a commit is made in GitHub, the 'Run Build' process still needs to be manually initiated. To automate this workflow, we configured a GitHub Webhook. Now, whenever there is a commit in the GitHub Repository, the webhook automatically triggers Jenkins to push the files and initiate the Build process.
 
-**To configure GitHub Webhook**
-
 [Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
 
 
