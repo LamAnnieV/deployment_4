@@ -21,18 +21,23 @@ GitHub is the repository where Jenkins retrieves the files to build, test, and d
 ## Step #3 Setup VPC and EC2 Infrastructure 
 
 **Instructions to Setup the infrastructure for two private subnets and two public subnets**
+
 [Setup VPC](https://github.com/LamAnnieV/Setup_VPC/blob/main/1_Setup_VPC.md)
+
 [Setup Subnets](https://github.com/LamAnnieV/Setup_VPC/blob/main/2_Setup_Subnets.md)
+
 [Setup Route Tables](https://github.com/LamAnnieV/Setup_VPC/blob/main/3_Setup_Route_Tables.md)
+
 [Setup Internet Gateways](https://github.com/LamAnnieV/Setup_VPC/blob/main/4_Setup_Internet_Gateways.md)
-
-
-**Jenkins**
-Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Keep Running Step".
 
 **Instructions to Setup a New EC2 Instance**
 
 [Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
+
+**Jenkins**
+Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Keep Running Step".
+
+
 
 **Instructions to Setup a New EC2 Instance**
 
