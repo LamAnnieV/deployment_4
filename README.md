@@ -10,9 +10,9 @@ Monitor application and server resources using AWS CloudWatch.
 
 Previously, the CI/CD pipeline was automated using Jenkins and GitHub webhook.  For this deployment, the Virtual Private Cloud, availability zone, and subnets were configured. CloudWatch was integrated with the EC2 where it can monitor the EC2 resources via CloudWatch agents. Instead of using Elastic Beanstalk CLI to deploy the application, GUnicorn was used and deployed to the Nginx web server
 
-## Step #1 Map Out the Deployment
+## Step #1 Diagram the VPC infrastructure and the CI/CD Pipeline
 
-![Deployment Flowchart](Images/Deployment_Pipeline.png)
+[Deployment Flowchart](Images/Deployment_Pipeline.png)
 
 ## Step #2 GitHub/Git
 
