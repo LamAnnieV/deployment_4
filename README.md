@@ -48,6 +48,10 @@ Nginx is used as a web server for hosting the URL Shortener application
 
 [Install Nginx](https://github.com/LamAnnieV/Instance_Installs/blob/main/Install_Ngnix.sh)
 
+After Nginx was installed, edit the configuration file "/etc/nginx/sites-enabled/default" with the information below:
+
+![Nginx Config File](Images/update_nginx_defaultfile.png)
+
 **Jenkins**
 
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, and Jenkins additional plugin "Pipeline Keep Running Step".
