@@ -68,38 +68,16 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Jenkins Build #1:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stage.
+### Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git] and run the build.  This build consists of four stages:  The build, the Test, the Clean, and the Deploy stages.
 
-**Result:  Build and Test was successful, see run #1**
-
-![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
-
-In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI were installed to automate the deployment of the URL Shortener.
-
-
-![Application URL](Images/URL_Website.png)
-
-### Jenkins Build #2:  The Jenkins file was edited to include a "Deploy" stage, which deploys the URL shortener.
-
-**Result:  Build and Test was successful, see run #3**
+**Result:  The build was successful, see run #1 - 3**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-**Check EBS Health**
-
-![Check EBS Health](Images/EBS_Health.png)
 
 **Launch URL Shortener Website**
 
 ![URL Shortener](Images/URL_Shortener.png)
-
-### Result:  Build and Test was successful, see run #4
-
-![Jenkins Successful Build](Images/Jenkins_Webhook.png)
-
-### Launch URL Shortener Website
-
-![URL Shortener](Images/Tested_Webhook.png)
 
 ## Issue(s): 
 
@@ -107,6 +85,5 @@ In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanst
             
 ## Area(s) for Optimization:
 
-- Further automate the installs to minimize manual input/entries
-- Install and configure Monitoring for Systems and Application Files
+- 1.  
   
