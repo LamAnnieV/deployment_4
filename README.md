@@ -94,7 +94,7 @@ Build #3 Resource Usage towards the end of the build
 
 CloudWatch Notification that Resource Usage is over 15%
 
-![CloudWatch Notification](CloudWatch_Notification_Build2and3.png)
+![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
 
 **Launch URL Shortener Website**
 
