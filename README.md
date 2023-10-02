@@ -80,11 +80,19 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 **CloudWatch Monitoring for Build #2 and 3 that was run back to back**
 
+Build #2 Resource Usage
+
 ![CloudWatch Monitoring #2](Images/CloudWatch_2.png)
+
+Build #3 Resource Usage at the beginning of the build
 
 ![CloudWatch Monitoring #3 Start](Images/CloudWatch_3_Start.png)
 
+Build #3 Resource Usage towards the end of the build
+
 ![CloudWatch Monitoring #3 End](Images/CloudWatch_3_End.png)
+
+CloudWatch Notification that Resource Usage is over 15%
 
 ![CloudWatch Notification](CloudWatch_Notification_Build2and3.png)
 
@@ -94,10 +102,12 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Applic
 
 **Conclusion**
 
+We used T.2 medium for this EC2 instance and this build uses a log
+
 ## Issue(s): 
 
-- There was an issue installing the ADW EB CLI.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
-            
+- This deployment went pretty smoothly, but there might be issues if we run too many builds at once or if there are too much traffic in the URL Shortener.
+  
 ## Area(s) for Optimization:
 
 - 1.  
