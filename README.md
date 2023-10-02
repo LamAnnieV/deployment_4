@@ -112,6 +112,9 @@ Jenkins Build:  In Jenkins create a build "Deployment_4" for the URL Shortener a
 
 ![CloudWatch Monitoring #3 End](Images/CloudWatch_3_End.png)
 
+**CloudWatch Notification that Resource Usage is over 15%**
+
+![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
 
 **Launch URL Shortener Website**
 
@@ -126,11 +129,6 @@ However, when we consider running builds consecutively, the CPU usage increases 
 **AWS Instance Type Capacity**
 
 ![Instance Type](Images/instance_type.png)
-
-**CloudWatch Notification that Resource Usage is over 15%**
-
-![CloudWatch Notification](Images/CloudWatch_Notification_Build2and3.png)
-
 
 ## Issue(s): 
 
