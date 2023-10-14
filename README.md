@@ -39,7 +39,6 @@ In order for the EC2 instance, where Jenkins is installed, to access the reposit
 [Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
 
 ## Step #4 Installs for EC2 
-## Step #4 Installs for EC2 
 
 **Shell Scripts for Python and other installs**
 
